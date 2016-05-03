@@ -8,6 +8,8 @@ Example:
 Requirments:
 
 ```
+$ sudo apt-get install -y python3.5
+$ sudo apt-get install -y python3-pip
 $ python3.5 -m pip install -r requirments.txt
 ```
 
