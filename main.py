@@ -1,9 +1,12 @@
 import requests
 import operator
+
 from bs4 import BeautifulSoup
 from pip._vendor.distlib.compat import raw_input
 
+
 d = dict()
+
 
 def get_best(url):
     url = 'http://www.infoarena.ro' + url
@@ -21,6 +24,7 @@ def get_best(url):
     if name not in d or max_ms < d[name][0]:
         d[name] = (max_ms, url)
     print(max_ms, name, url)
+
 
 def monitor_spider(pb_name, fw):
     def_url = 'http://www.infoarena.ro/monitor?task=' + pb_name + '&display_entries=250&first_entry='
@@ -54,6 +58,7 @@ def monitor_spider(pb_name, fw):
     fw.write('Accepted submissions: {}\n'.format(accepted_entries))
     fw.write('Success rate: {0:.2f}%\n\n'.format((accepted_entries / max_entries) * 100))
 
+
 def optimum():
     pb_name = input("Enter the problem's name: ")
     fw = open(pb_name + '.txt', 'w')
@@ -70,4 +75,11 @@ def optimum():
         fw.write(s)
     fw.close()
 
-optimum()
+
+def main():
+    optimum()
+
+
+if __name__ == "__main__":
+    main()
+
