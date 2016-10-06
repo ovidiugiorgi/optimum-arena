@@ -17,7 +17,7 @@ To deactivate, just type.
     $ deactivate 
 
 ### Install dependencies
-    $ pip install -r requirements.txt 
+    $ python3.5 -m pip install -r requirements.txt 
 
 ### Run
-    $ python main.py 
+    $ python3.5 main.py 
