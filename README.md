@@ -1,4 +1,4 @@
-# optimum-arena
+# Optimum Arena
 
 Tool that gets the "optimum" leaderboard for problems from online judge site <a href="http://www.infoarena.ro"> infoarena.ro</a>.
 
