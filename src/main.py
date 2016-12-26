@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 
 d = dict()
 
-
 def get_best(url):
     url = 'http://www.infoarena.ro' + url
     source_code = requests.get(url)
